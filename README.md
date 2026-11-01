@@ -17,6 +17,15 @@ ln -s ~/.claude/skills/mikecopy ~/.agents/skills/mikecopy   # Codex
 Node is the only dependency. Install it next to mikedesign (as a sibling folder) so mikedesign can
 load its rules.
 
+## Works with mikedesign: one interview
+
+For a screen, page or email, mikecopy does not run its own interview. It takes part in
+mikedesign's joint interview, run by the `grilling` skill, so the owner answers each question once
+and the layout and the words are decided together. Before anything is drafted, every string is
+tested: if it were gone, would the reader lose anything the design does not already give them? A
+subhead that restates its headline, and helper text under a field whose label says it, are cut on
+sight, and every cut is reported so it can be restored.
+
 ## Modes
 
 | Mode | For |

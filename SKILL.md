@@ -1,7 +1,7 @@
 ---
 name: mikecopy
-description: Use for any writing meant for a reader. Product and marketing copy (interface strings, landing pages, store listings, transactional and lifecycle email, push), long-form and SEO writing (blog posts, guides, articles, changelogs), personal and business writing in the owner's own voice (emails, LinkedIn posts, pitches, bios, announcements), and creative writing (fiction, scripts, poetry, speeches, invitations and event wording). Handles tone and style on request, from formal to playful, and keeps a saved voice per brand. Also use when text sounds generic, templated or AI-generated and needs to sound like a person, or when asked to humanize, edit, tighten or cut a draft. mikedesign hands its page and screen words to this skill.
-version: 1.0.0
+description: Use for any writing meant for a reader. Product and marketing copy (interface strings, landing pages, store listings, transactional and lifecycle email, push), long-form and SEO writing (blog posts, guides, articles, changelogs), personal and business writing in the owner's own voice (emails, LinkedIn posts, pitches, bios, announcements), and creative writing (fiction, scripts, poetry, speeches, invitations and event wording). Handles tone and style on request, from formal to playful, and keeps a saved voice per brand. Also use when text sounds generic, templated or AI-generated and needs to sound like a person, or when asked to humanize, edit, tighten or cut a draft. In product work it takes part in mikedesign's single joint interview with the layout, and deletes every string that does not earn its place.
+version: 1.1.0
 user-invocable: true
 argument-hint: "[product|longform|personal|creative] [what to write or edit]"
 license: MIT
@@ -27,9 +27,16 @@ Editing someone else's draft to stop it sounding machine-made is whichever mode 
 belongs to. Load [core/patterns.md](core/patterns.md) for it.
 
 Load exactly one mode playbook. Always load [core/voice.md](core/voice.md) before writing a
-word. Load [core/tone.md](core/tone.md) when there is no saved voice for this piece.
+word.
 
-## The three rules
+**One interview, not two.** When mikedesign called you, or the request is a screen, page or email
+with its words, you take part in mikedesign's joint interview (its `core/joint-brief.md`), run by
+the `grilling` skill, and do not start your own. Supply the writing questions (who is talking, what
+the reader already knows, the claim in one sentence, what must never be said) and skip any that the
+voice record, a prior brief or the taste profile already answers. A request that is only words, with
+no surface, runs the short interview in [core/tone.md](core/tone.md) as before. Load [core/tone.md](core/tone.md) when there is no saved voice for this piece.
+
+## The four rules
 
 **1. Voice before words.** Never draft until you know who is talking. A product's voice lives in
 its `.mikedesign/DESIGN.md`, at `brand.voice`, and mikedesign reads the same record, so the site
@@ -48,11 +55,24 @@ does not get a pass on em dashes or stock imagery. Hard rules gate the work. Adv
 reported for judgment. The only way past a rule is the `allow` list in the voice record, which
 makes the exception a visible decision rather than a quiet one.
 
+**4. Every string earns its place.** Unnecessary words are the commonest failure in product and
+marketing copy, and the cure is deletion before drafting. For each string, ask what the reader
+would lose if it were gone. If the answer is nothing, or only what the layout or a neighbouring
+string already gives them, it comes out. Two cases to cut on sight: a subhead that restates its
+headline, and helper text under a field whose label already says it. The owner's own cut list, in
+their taste profile (see below), adds to these. Cuts are reported with the reason, so the owner
+can restore any of them.
+
 Two rules have no override: **no em dashes** (restructure with commas, colons, parentheses or two
 sentences), and **one headline, never two** (nothing above a headline: no eyebrow, kicker or
 label). Both are explained in [core/voice.md](core/voice.md).
 
-## Setup
+## The owner's taste profile
+
+If a `taste-personal.md` exists beside the owner's personal voice file (the private memory location
+their global instructions name), read it before writing. It records what the owner responds to and
+what they count as unnecessary words. It is private and never stored in this skill's folder. It
+does not replace a product's voice record; it adds to it.
 
 Resolve script paths from the base directory the runtime reports for this skill. Below, `$S`
 means `<skill-base-dir>/scripts`. Node is the only dependency.
