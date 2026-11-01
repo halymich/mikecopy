@@ -63,9 +63,12 @@ headline, and helper text under a field whose label already says it. The owner's
 their taste profile (see below), adds to these. Cuts are reported with the reason, so the owner
 can restore any of them.
 
-Two rules have no override: **no em dashes** (restructure with commas, colons, parentheses or two
-sentences), and **one headline, never two** (nothing above a headline: no eyebrow, kicker or
-label). Both are explained in [core/voice.md](core/voice.md).
+One rule has no override: **no em dashes** (restructure with commas, colons, parentheses or two
+sentences). A second, **one headline, never two** (nothing above a headline: no eyebrow, kicker or
+label), is absolute in interface strings, email, push and store copy. On marketing website copy the
+owner dropped the hard ban (decision of 1 November 2026): an eyebrow there must pass the deletion
+test, and the default is still a headline that stands alone. Both are explained in
+[core/voice.md](core/voice.md).
 
 ## The owner's taste profile
 
