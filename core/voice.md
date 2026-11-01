@@ -120,6 +120,11 @@ With a profile, drafting is a constrained problem, which is the kind models are 
 
 ## One headline, never two
 
+**Scope.** Absolute in interface strings, email, push and store copy. On marketing website copy the
+owner dropped the hard ban (decision of 1 November 2026): an eyebrow is allowed only if it says
+something the headline does not, passes the deletion test, and is reported to the owner as a
+choice. The default is still a headline that stands alone.
+
 A headline ships alone. Never write a short line to sit above it: no eyebrow, no kicker, no
 label, no "Introducing", no category word in caps, whatever the deliverable calls the slot.
 
