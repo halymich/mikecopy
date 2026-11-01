@@ -19,7 +19,21 @@ back in place; mikedesign renders and shows them.
 Articles and changelogs are [longform.md](longform.md). Store panel captions belong to
 mikedesign's `screenshots` command, which owns their six-word budget.
 
-## 2. Voice before words
+## 2. The interview, then the voice
+
+For a screen, page or email, the questions are asked once, in mikedesign's joint interview (its
+`core/joint-brief.md`, run by the `grilling` skill). Your part of it:
+
+- Who is talking, and to whom. What the reader already knows.
+- The claim, in one sentence.
+- What this voice must never say.
+- The **string inventory**: every piece of text the surface needs, one line each, with the job it
+  does. Run the deletion test on it before drafting anything (see section 5).
+
+A subject line, preheader and sender name are part of the inventory for an email, and are decided
+first, because for most readers they are the whole email.
+
+## Voice before words
 
 Read `brand.voice` in `DESIGN.md`. If it is missing, capture it per [../core/voice.md](../core/voice.md)
 and add it there, at brand level, so mikedesign and every later piece inherit it. Editing existing
@@ -50,6 +64,13 @@ tighter prose, and never solve overflow by shrinking type.
 
 ## 5. How to cut
 
+0. **Run the deletion test on every string, before drafting.** What would the reader lose if it
+   were gone? Nothing, or only what the layout or the next string already says: delete it. Cut on
+   sight: a subhead that restates its headline; helper text under a field whose label already says
+   it; a caption that describes the image it sits under. Add whatever the owner's taste profile
+   lists as unnecessary. Report every deleted string with the reason, so any can be restored. The
+   owner decides what stays; do not delete a string that carries legal text, a required
+   disclosure or a claim the product must make.
 1. **Delete whole sentences before trimming words.** The second sentence usually restates the
    first with more adjectives.
 2. **Cut the wind-up.** "We built this because we believe" prefixes the actual claim. Start at it.

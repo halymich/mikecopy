@@ -18,6 +18,9 @@ Three sources, checked in this order. Use the first that applies.
 2. **The owner writing as themselves.** A personal voice file in the owner's private memory, at
    the location their global `AGENTS.md` names. Never in this skill's folder, which is public. If
    no location is named, ask where to keep it before writing one.
+2b. **The owner's taste profile,** `taste-personal.md`, beside the personal voice file. It is not a
+   voice. It records what the owner responds to and what they count as unnecessary words, and it
+   adds to whichever voice applies. Read it when it exists.
 3. **Neither.** A one-off piece, like a wedding toast or a story for a friend. Run the short tone
    interview in [tone.md](tone.md) and record the answer in your report, not in a file.
 
